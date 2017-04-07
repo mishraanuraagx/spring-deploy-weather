@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 @Service
-@PropertySource("api.properties")
+@PropertySource("classpath:api.properties")
 public class PlacesServiceImpl extends RestApiService<PlacesResponse> implements PlacesService {
     private String name;
     private String key;
